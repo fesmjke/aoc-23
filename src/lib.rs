@@ -6,7 +6,7 @@ mod tests {
 
         #[test]
         fn small_a() {
-            let value = day1::calibration("./day1/input_small_a.txt");
+            let value = day1::calibration("./day1/input_small.txt");
 
             assert_eq!(value, 142);
         }
@@ -23,8 +23,6 @@ mod tests {
             let a = day1::calibration("./day1/input_ab.txt");
 
             println!("{:?}", a);
-
-            assert!(a >= 0)
         }
     }
 }
