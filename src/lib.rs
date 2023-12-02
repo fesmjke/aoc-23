@@ -25,4 +25,22 @@ mod tests {
             println!("{:?}", a);
         }
     }
+    mod day_2 {
+        use day2;
+
+        #[test]
+        fn small_a() {
+            let value = day2::cube_conundrum("./day2/input_small_a.txt");
+
+            assert_eq!(value, 8);
+        }
+        #[test]
+        fn input() {
+            let value = day2::cube_conundrum("./day2/input_ab.txt");
+
+            println!("Sum of game ids -> {value}");
+
+            assert!(value > 0);
+        }
+    }
 }
