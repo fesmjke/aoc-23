@@ -32,7 +32,8 @@ mod tests {
         fn small_a() {
             let value = day2::cube_conundrum("./day2/input_small_a.txt");
 
-            assert_eq!(value, 8);
+            // assert_eq!(value, 8); // part a
+            assert_eq!(value, 2286); // part b
         }
         #[test]
         fn input() {
